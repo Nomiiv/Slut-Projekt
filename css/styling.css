@@ -1,0 +1,6 @@
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  border: solid;
+  padding: 16px;
+}
