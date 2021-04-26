@@ -10,6 +10,38 @@
   --dark: #e1e1e1;
   --pink: #e1cdc5;
 }
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.chapter {
+  grid-area: chapter;
+}
+
+.note {
+  grid-area: note;
+}
+.main {
+  display: grid;
+  grid-template-columns: 10vw 50vw 30vw;
+  grid-template-areas:
+    "....... chapter chapter"
+    "sidebar content content"
+    "note note note";
+  color: var(--light);
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 body {
   margin: 0px;
   background-color: var(--dark-gray);
