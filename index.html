@@ -29,19 +29,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styling.css" />
-    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <script defer src="js/sidebar.js"></script>
     <script defer src="js/main.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header class="navigation-bar fixed-top">
-      <h1 id="title">Gran Blue Tierlist</h1>
-      <nav>
-        <a href="">Grid</a>
-        <a href="">Charater</a>
-        <a href="">Weapons</a>
-      </nav>
-    </header>
+    <article id="home">
+      <header class="navigation-bar fixed-top">
+        <a id="title" href="#home"><h1>Not a GBF Tierlist</h1></a>
+        <nav class="my-nav">
+          <a class="my-nav-cell" href="#home">Home</a>
+          <a class="my-nav-cell" href="#chara">Charater</a>
+          <a class="my-nav-cell" href="#weapon">Weapons</a>
+          <div class="navbar navbar-static navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header"></div>
+              <button
+                type="button"
+                class="navbar-toggle toggle-right"
+                data-toggle="sidebar"
+                data-target=".sidebar-right"
+              >
+                <span class="navbar-bar"></span>
+                <span class="navbar-bar"></span>
+                <span class="navbar-bar"></span>
+              </button>
+            </div>
+          </div>
+          <div class="sidebar-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div
+                  class="col-xs-7 col-sm-3 col-md-3 sidebar sidebar-right sidebar-animate"
+                >
+                  <ul class="nav navbar-stacked">
+                    <li class="active">
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </article>
     <div class="info info-filter">
       <div class="info-box">
         <h2>About me</h2>
@@ -60,12 +99,151 @@
           facilis sequi ipsa!
         </p>
       </div>
-      <a id="" href="">crabs</a>
     </div>
-    <div class="main">
-      <h2>Tier List</h2>
-      <div class="box wrapper">
-        <div class="ssrankcell content">
+    <article id="chara">
+      <div class="main">
+        <h2>Tier List</h2>
+        <div class="box wrappers">
+          <div class="ssrankcell contents">
+            <img class="rank-id" src="img/SS.png" alt="" />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#grimnir"
+              src="img/grimnir.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#grimnir"
+              src="img/grimnir.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#grimnir"
+              src="img/grimnir.jpg"
+              alt=""
+            />
+          </div>
+          <div class="srankcell contents">
+            <img class="rank-id" src="img/S.png" alt="" />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+          </div>
+          <div class="arankcell contents">
+            <img class="rank-id" src="img/A.png" alt="" />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+          </div>
+          <div class="brankcell contents">
+            <img class="rank-id" src="img/B.png" alt="" />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+          </div>
+          <div class="crankcell contents">
+            <img class="rank-id" src="img/C.png" alt="" />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+            <img
+              class="my-button"
+              data-toggle="modal"
+              data-target="#richard"
+              src="img/Richard.jpg"
+              alt=""
+            />
+          </div>
+          <div class="note">
+            note Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellat ut necessitatibus iure quasi rerum velit alias ab ipsum,
+            sunt, id nulla atque aut at sint temporibus laboriosam tempora
+            facilis. Animi reiciendis ab eius dolores laboriosam eos explicabo
+            molestias eligendi nemo repellendus quibusdam cumque adipisci,
+            nesciunt quis placeat fuga fugiat magnam, eaque error quod accusamus
+            harum! Eaque distinctio dolore reprehenderit voluptates doloribus!
+            Fuga et soluta explicabo neque ullam commodi quaerat aut animi ut
+            perferendis eaque vitae tempore omnis amet corporis possimus maiores
+            sit, rerum officiis optio repellendus est eos dolor quod? Quam sint
+            totam, mollitia quia doloribus temporibus ducimus aut veritatis.
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="weapon">
+      <h2>Weapons (not really)</h2>
+      <div class="box wrappers">
+        <div class="ssrankcell contents">
           <img class="rank-id" src="img/SS.png" alt="" />
           <img
             class="my-button"
@@ -89,7 +267,7 @@
             alt=""
           />
         </div>
-        <div class="srankcell content">
+        <div class="srankcell contents">
           <img class="rank-id" src="img/S.png" alt="" />
           <img
             class="my-button"
@@ -98,48 +276,92 @@
             src="img/Richard.jpg"
             alt=""
           />
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
         </div>
-        <div class="arankcell content">
+        <div class="arankcell contents">
           <img class="rank-id" src="img/A.png" alt="" />
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
         </div>
-        <div class="brankcell content">
+        <div class="brankcell contents">
           <img class="rank-id" src="img/B.png" alt="" />
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
         </div>
-        <div class="crankcell content">
+        <div class="crankcell contents">
           <img class="rank-id" src="img/C.png" alt="" />
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
-          <a href="">
-            <img src="img/grimnir.jpg" alt="Sandal likes water" />
-          </a>
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
         </div>
         <div class="note">
           note Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -155,7 +377,7 @@
           doloribus temporibus ducimus aut veritatis.
         </div>
       </div>
-    </div>
+    </article>
     <div class="modal-storage">
       <!-- The Modal -->
       <div class="modal fade" id="grimnir">
@@ -202,6 +424,99 @@
               <ul>
                 <li>
                   Is not able to deal any damage through his charge attack.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Is not able to deal any damage through his charge attack.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Is not able to deal any damage through his charge attack.
+                </li>
+              </ul>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer footer-custom">
+              <button
+                type="button"
+                class="btn btn-secondary close-custom"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="richard">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header header-custom">
+              <h4 class="modal-title">Grimnir</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body body-custom">
+              <img class="depth-image" src="img/Richard.jpg" alt="" />
+              <h5>Strength</h5>
+              <ul>
+                <li>
+                  His guaranteed triple attack effectively makes multi attack
+                  rate debuffs have no effect on him.
+                </li>
+                <li>
+                  Has a lot of damage instances both in his auto attacks and his
+                  skill casts making him synergize very well with Supplemental
+                  damage
+                </li>
+                <li>
+                  Capable of increasing his and his party's offensive damage
+                  output.
+                </li>
+                <li>
+                  One-turn cooldown on all of his skills, which makes him a good
+                  skill-based damage dealer.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati quasi laboriosam iusto, necessitatibus quaerat
+                  quidem nulla quo labore voluptates eos provident modi
+                  voluptatem fugiat aliquam odit reprehenderit voluptatibus qui
+                  ut quam veritatis nobis perspiciatis facilis maxime. Accusamus
+                  repudiandae commodi exercitationem necessitatibus, sint ipsum
+                  aut ut iste amet unde consequatur, nesciunt nulla animi
+                  repellat perferendis eius doloremque corrupti natus voluptas
+                  tempore fugiat, quibusdam in molestiae voluptatibus. Hic fuga
+                  distinctio iure reprehenderit blanditiis quasi animi earum
+                  molestiae perferendis corporis magni architecto laborum,
+                  libero repudiandae? Repellat non excepturi necessitatibus
+                  ipsam nihil, illum voluptatum consectetur numquam amet
+                  doloribus dignissimos cumque eos quisquam totam accusantium.
+                </li>
+              </ul>
+              <h5>Weakness</h5>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni odit asperiores ipsam dolorum, nisi cumque provident
+                  quae. Nulla, placeat cumque necessitatibus ducimus rerum
+                  culpa? Fugit itaque qui et reprehenderit sed repudiandae,
+                  atque modi ut soluta, possimus omnis quas, animi iure corrupti
+                  nihil. Deleniti, modi! Quibusdam voluptate consectetur
+                  deleniti ad? Incidunt aspernatur error neque est, animi
+                  exercitationem maiores! Ipsa ipsum laborum aperiam nobis
+                  magnam eveniet ullam id ex autem quae animi, consequuntur,
+                  itaque recusandae nam saepe laboriosam dicta aliquam maxime
+                  quas nesciunt voluptatem quia? Quos sint molestiae ea
+                  asperiores nemo, tenetur adipisci praesentium natus et quaerat
+                  dolor velit, excepturi suscipit iste!.
                 </li>
               </ul>
             </div>

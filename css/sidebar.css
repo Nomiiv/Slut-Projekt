@@ -1,0 +1,100 @@
+/* All the default sidebar styles */
+/* toggle button settings */
+/* Note: this disables navbar-toggle class hide function. set visibility with the boostrap visible/hidden classes */
+
+.navbar .navbar-toggle.toggle-sidebar,
+[data-toggle="sidebar"] {
+  display: block;
+}
+
+/* sidebar settings */
+.sidebar {
+  position: fixed;
+  display: block;
+  top: 0rem;
+  bottom: 0;
+  z-index: 0;
+  min-height: 100%;
+  max-height: none;
+  overflow: auto;
+}
+
+.sidebar-right {
+  right: 0;
+}
+
+.row .sidebar.sidebar-right.sidebar-xs-show {
+  right: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transform: none;
+}
+@media (min-width: 768px) {
+  /*right sidebar is untested */
+  .row .sidebar.sidebar-right.sidebar-sm-show {
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transform: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .sidebar.sidebar-right.sidebar-md-show {
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transform: none;
+  }
+}
+
+@media (min-width: 1170px) {
+  .row .sidebar.sidebar-right.sidebar-lg-show {
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transform: none;
+  }
+}
+@media (max-width: 300px) {
+  .sidebar {
+    position: fixed;
+    display: block;
+    top: 3rem;
+    bottom: 0;
+    z-index: 0;
+    min-height: 100%;
+    max-height: none;
+    overflow: auto;
+  }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    position: fixed;
+    display: block;
+    top: 3.9rem;
+    bottom: 0;
+    z-index: 0;
+    min-height: 100%;
+    max-height: none;
+    overflow: auto;
+  }
+}
+
+.sidebar-animate {
+  -webkit-transition: -webkit-transform 300ms ease;
+  -moz-transition: -moz-transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+.sidebar.sidebar-right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.sidebar.sidebar-right.sidebar-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transform: none;
+}
