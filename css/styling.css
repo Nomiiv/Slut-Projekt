@@ -22,7 +22,7 @@ html {
 .info {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-image: url(/img/877952.jpg);
+  background-image: url(img/877952.jpg);
   color: var(--dark-gray);
 }
 .info-filter {
