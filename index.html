@@ -5,39 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto+Slab:wght@100&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styling.css" />
-    <script defer src="js/java.js"></script>
+    <link rel="stylesheet" href="css/style2.css" />
+    <script defer src="js/main.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Gran Blue Tierlist</h1>
+    <header class="navigation-bar fixed-top">
+      <h1 id="title">Gran Blue Tierlist</h1>
       <nav>
         <a href="">Grid</a>
         <a href="">Charater</a>
         <a href="">Weapons</a>
       </nav>
     </header>
-    <div class="main">
-      <div class="box chapter">Cool title</div>
-      <div class="box sidebar">sidebar</div>
-      <div class="box content">
-        placeholder Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nisi aut modi laborum recusandae accusamus molestiae et voluptate ea
-        porro doloribus rerum illum voluptatum, similique magni? Repellendus in
-        at corrupti odio amet dolorem ratione, incidunt, minima possimus neque,
-        fuga obcaecati veniam fugit? Aut quibusdam ratione mollitia magnam et
-        hic minima libero, ad, voluptas alias id! Nobis quos saepe maxime, odit
-        dolorem impedit quis rerum non laboriosam odio aperiam esse cum dolores
-        ex adipisci nesciunt, sequi sint iste consequatur cumque nulla deleniti
-        inventore aut. Illo necessitatibus earum accusamus vitae assumenda quia
-        minus, autem eligendi cupiditate adipisci. Odio voluptatibus blanditiis
-        ab at voluptate?
+    <div class="info info-filter">
+      <div class="info-box">
+        <h2>About me</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          quam reprehenderit autem tempora maxime vitae facilis odio, debitis
+          esse cum, dolore laudantium non iure rerum, laborum magni. Enim
+          blanditiis ipsum tempora obcaecati corrupti nisi exercitationem alias
+          doloremque soluta accusantium, quod itaque dolorum non est eos
+          voluptas earum minus consequuntur cum labore distinctio cumque quis
+          eum. Praesentium ipsa, ex ducimus et itaque laudantium in, reiciendis
+          mollitia culpa omnis assumenda unde voluptatem ullam enim similique
+          harum laboriosam, alias quis sint dignissimos necessitatibus voluptas
+          distinctio! Provident debitis ullam aliquid aliquam asperiores, quis,
+          vitae nam inventore consectetur sunt exercitationem labore error
+          facilis sequi ipsa!
+        </p>
       </div>
-      <div class="box note">note</div>
+      <a id="" href="">crabs</a>
+    </div>
+    <div class="main">
+      <h2>Tier List</h2>
+      <div class="box wrapper">
+        <div class="ssrankcell content">
+          <img class="rank-id" src="img/SS.png" alt="" />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#grimnir"
+            src="img/grimnir.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#grimnir"
+            src="img/grimnir.jpg"
+            alt=""
+          />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#grimnir"
+            src="img/grimnir.jpg"
+            alt=""
+          />
+        </div>
+        <div class="srankcell content">
+          <img class="rank-id" src="img/S.png" alt="" />
+          <img
+            class="my-button"
+            data-toggle="modal"
+            data-target="#richard"
+            src="img/Richard.jpg"
+            alt=""
+          />
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+        </div>
+        <div class="arankcell content">
+          <img class="rank-id" src="img/A.png" alt="" />
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+        </div>
+        <div class="brankcell content">
+          <img class="rank-id" src="img/B.png" alt="" />
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+        </div>
+        <div class="crankcell content">
+          <img class="rank-id" src="img/C.png" alt="" />
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+          <a href="">
+            <img src="img/grimnir.jpg" alt="Sandal likes water" />
+          </a>
+        </div>
+        <div class="note">
+          note Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          ut necessitatibus iure quasi rerum velit alias ab ipsum, sunt, id
+          nulla atque aut at sint temporibus laboriosam tempora facilis. Animi
+          reiciendis ab eius dolores laboriosam eos explicabo molestias eligendi
+          nemo repellendus quibusdam cumque adipisci, nesciunt quis placeat fuga
+          fugiat magnam, eaque error quod accusamus harum! Eaque distinctio
+          dolore reprehenderit voluptates doloribus! Fuga et soluta explicabo
+          neque ullam commodi quaerat aut animi ut perferendis eaque vitae
+          tempore omnis amet corporis possimus maiores sit, rerum officiis optio
+          repellendus est eos dolor quod? Quam sint totam, mollitia quia
+          doloribus temporibus ducimus aut veritatis.
+        </div>
+      </div>
+    </div>
+    <div class="modal-storage">
+      <!-- The Modal -->
+      <div class="modal fade" id="grimnir">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header header-custom">
+              <h4 class="modal-title">Grimnir</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body body-custom">
+              <img class="depth-image" src="img/grimnir.jpg" alt="" />
+              <h5>Strength</h5>
+              <ul>
+                <li>
+                  His guaranteed triple attack effectively makes multi attack
+                  rate debuffs have no effect on him.
+                </li>
+                <li>
+                  Has a lot of damage instances both in his auto attacks and his
+                  skill casts making him synergize very well with Supplemental
+                  damage
+                </li>
+                <li>
+                  Capable of increasing his and his party's offensive damage
+                  output.
+                </li>
+                <li>
+                  One-turn cooldown on all of his skills, which makes him a good
+                  skill-based damage dealer.
+                </li>
+                <li>
+                  Is capable of massive amounts of damage as well as debuffing
+                  foes that decrease the overall damage output of the enemy. The
+                  amount of damage it can deal can compensate the lack of damage
+                  on his charge attack.
+                </li>
+              </ul>
+              <h5>Weakness</h5>
+              <ul>
+                <li>
+                  Is not able to deal any damage through his charge attack.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer footer-custom">
+              <button
+                type="button"
+                class="btn btn-secondary close-custom"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer></footer>
   </body>
