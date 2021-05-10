@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/sidebar.css" />
     <script defer src="js/sidebar.js"></script>
     <script defer src="js/main.js"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -68,10 +69,10 @@
                       <a href="#">Home</a>
                     </li>
                     <li>
-                      <a href="#about">About</a>
+                      <a href="html/about.html">About</a>
                     </li>
                     <li>
-                      <a href="#contact">Contact</a>
+                      <a href="/html/contact.html">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -80,24 +81,35 @@
           </div>
         </nav>
       </header>
+      <a href="#home">
+        <i class="button-up">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-up"
+            viewbox="0 0 16 16"
+          >
+            <path
+              d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"
+            />
+          </svg>
+        </i>
+      </a>
     </article>
-    <div class="info info-filter">
-      <div class="info-box">
-        <h2>About me</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          quam reprehenderit autem tempora maxime vitae facilis odio, debitis
-          esse cum, dolore laudantium non iure rerum, laborum magni. Enim
-          blanditiis ipsum tempora obcaecati corrupti nisi exercitationem alias
-          doloremque soluta accusantium, quod itaque dolorum non est eos
-          voluptas earum minus consequuntur cum labore distinctio cumque quis
-          eum. Praesentium ipsa, ex ducimus et itaque laudantium in, reiciendis
-          mollitia culpa omnis assumenda unde voluptatem ullam enim similique
-          harum laboriosam, alias quis sint dignissimos necessitatibus voluptas
-          distinctio! Provident debitis ullam aliquid aliquam asperiores, quis,
-          vitae nam inventore consectetur sunt exercitationem labore error
-          facilis sequi ipsa!
-        </p>
+    <div class="info-background">
+      <div class="info-filter">
+        <div class="info-box">
+          <h2>What makes the sky blue</h2>
+          <p>
+            Gases and particles in Earth's atmosphere scatter sunlight in all
+            directions. Blue light is scattered more than other colors because
+            it travels as shorter, smaller waves. This is why we see a blue sky
+            most of the time.
+          </p>
+          <p id="source">source: scijinks.gov</p>
+        </div>
       </div>
     </div>
     <article id="chara">
@@ -225,17 +237,20 @@
             />
           </div>
           <div class="note">
-            note Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellat ut necessitatibus iure quasi rerum velit alias ab ipsum,
-            sunt, id nulla atque aut at sint temporibus laboriosam tempora
-            facilis. Animi reiciendis ab eius dolores laboriosam eos explicabo
-            molestias eligendi nemo repellendus quibusdam cumque adipisci,
-            nesciunt quis placeat fuga fugiat magnam, eaque error quod accusamus
-            harum! Eaque distinctio dolore reprehenderit voluptates doloribus!
-            Fuga et soluta explicabo neque ullam commodi quaerat aut animi ut
-            perferendis eaque vitae tempore omnis amet corporis possimus maiores
-            sit, rerum officiis optio repellendus est eos dolor quod? Quam sint
-            totam, mollitia quia doloribus temporibus ducimus aut veritatis.
+            <p>
+              note Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellat ut necessitatibus iure quasi rerum velit alias ab ipsum,
+              sunt, id nulla atque aut at sint temporibus laboriosam tempora
+              facilis. Animi reiciendis ab eius dolores laboriosam eos explicabo
+              molestias eligendi nemo repellendus quibusdam cumque adipisci,
+              nesciunt quis placeat fuga fugiat magnam, eaque error quod
+              accusamus harum! Eaque distinctio dolore reprehenderit voluptates
+              doloribus! Fuga et soluta explicabo neque ullam commodi quaerat
+              aut animi ut perferendis eaque vitae tempore omnis amet corporis
+              possimus maiores sit, rerum officiis optio repellendus est eos
+              dolor quod? Quam sint totam, mollitia quia doloribus temporibus
+              ducimus aut veritatis.
+            </p>
           </div>
         </div>
       </div>
@@ -364,17 +379,19 @@
           />
         </div>
         <div class="note">
-          note Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          ut necessitatibus iure quasi rerum velit alias ab ipsum, sunt, id
-          nulla atque aut at sint temporibus laboriosam tempora facilis. Animi
-          reiciendis ab eius dolores laboriosam eos explicabo molestias eligendi
-          nemo repellendus quibusdam cumque adipisci, nesciunt quis placeat fuga
-          fugiat magnam, eaque error quod accusamus harum! Eaque distinctio
-          dolore reprehenderit voluptates doloribus! Fuga et soluta explicabo
-          neque ullam commodi quaerat aut animi ut perferendis eaque vitae
-          tempore omnis amet corporis possimus maiores sit, rerum officiis optio
-          repellendus est eos dolor quod? Quam sint totam, mollitia quia
-          doloribus temporibus ducimus aut veritatis.
+          <p>
+            note Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellat ut necessitatibus iure quasi rerum velit alias ab ipsum,
+            sunt, id nulla atque aut at sint temporibus laboriosam tempora
+            facilis. Animi reiciendis ab eius dolores laboriosam eos explicabo
+            molestias eligendi nemo repellendus quibusdam cumque adipisci,
+            nesciunt quis placeat fuga fugiat magnam, eaque error quod accusamus
+            harum! Eaque distinctio dolore reprehenderit voluptates doloribus!
+            Fuga et soluta explicabo neque ullam commodi quaerat aut animi ut
+            perferendis eaque vitae tempore omnis amet corporis possimus maiores
+            sit, rerum officiis optio repellendus est eos dolor quod? Quam sint
+            totam, mollitia quia doloribus temporibus ducimus aut veritatis.
+          </p>
         </div>
       </div>
     </article>
@@ -535,6 +552,16 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <nav>
+        <a
+          href="https://gbf.wiki/Character_Tier_List/Gamewith/Ratings"
+          target="_blank"
+          >Actual GBF tierlist</a
+        >
+        <a href="html/contact.html">Contact</a>
+      </nav>
+      <p>© 2021</p>
+    </footer>
   </body>
 </html>
