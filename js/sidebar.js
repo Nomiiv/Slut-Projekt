@@ -32,7 +32,7 @@
     if (startEvent.isDefaultPrevented()) return;
 
     this.$element.addClass("sidebar-open");
-    $(".my-nav").addClass("active");
+    $(".my-nav").addClass("active"); //dålig instättning från mig -leo
     this.transitioning = 1;
 
     var complete = function () {

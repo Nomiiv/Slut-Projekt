@@ -9,23 +9,33 @@
   --light: #f3f3f3;
   --white: #fdfdfd;
   --pink: #e1cdc5;
+  --green: #28a745;
+  --secondary-blue: #17a2b8;
+  --gray: #6c757d;
   --transparent: rgba(255, 0, 0, 0);
 }
 body,
 html {
   scroll-behavior: smooth;
 }
-#title {
+#banner {
   display: flex;
   text-decoration: none;
 }
+
+#banner img {
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 20px;
+  max-height: 40px;
+}
 .info-filter {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   background: linear-gradient(
     0deg,
     rgba(44, 44, 44, 0.596),
-    rgba(3, 161, 224, 0.521)
+    rgba(3, 161, 224, 0.856)
   );
   color: var(--dark-gray);
 }
@@ -35,6 +45,7 @@ html {
 }
 .info-background {
   background-image: url(https://images.alphacoders.com/877/877952.jpg);
+  background-size: cover;
 }
 .info-box {
   margin: 10vw;
@@ -87,21 +98,6 @@ header {
   background-color: var(--transparent);
   transition: all 0.3s ease;
 }
-.my-nav {
-  padding-right: 2.5rem;
-  display: flex;
-  margin-left: 2rem;
-  transition: all ease 0.4s;
-}
-.my-nav.active {
-  margin-right: 30vw;
-}
-.my-nav .my-nav-cell {
-  color: var(--light);
-  transition: all 0.7s ease 0s;
-  padding: 1rem;
-  text-decoration: none;
-}
 .sidebar {
   background: rgb(21, 101, 192);
   background: linear-gradient(
@@ -119,12 +115,29 @@ header {
   display: flex;
   flex-direction: column;
 }
+.my-nav {
+  padding-right: 2.5rem;
+  display: flex;
+  margin-left: 2rem;
+  transition: all ease 0.4s;
+}
+.my-nav.active {
+  margin-right: 30vw;
+}
+.my-nav .my-nav-cell {
+  color: var(--light);
+  transition: all 0.7s ease 0s;
+  padding: 1rem;
+  text-decoration: none;
+}
 
 .navigation-bar.scroll {
   background-color: var(--blue);
+  padding-top: 0;
 }
 .navigation-bar {
   justify-content: space-between;
+  padding-top: 0.5rem;
 }
 .navbar-stacked a {
   display: flex;
@@ -140,8 +153,13 @@ header {
 .my-nav .my-nav-cell:hover {
   background-color: rgba(221, 221, 221, 0.26);
 }
-.my-nav .my-nav-cell:active {
-  color: var(--red);
+.navbar-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  margin: 5px;
 }
 .contents {
   padding: 20px;
@@ -150,8 +168,13 @@ header {
   color: var(--blue);
   margin: 5px;
 }
-.contents img {
-  padding-right: 1rem;
+.contents img:not(.rank-id) {
+  margin-right: 2rem;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.35);
+}
+.rank-id {
+  margin-right: 100px;
 }
 .fixed-top {
   position: fixed;
@@ -182,14 +205,6 @@ button {
 }
 button:focus {
   outline: none;
-}
-.navbar-bar {
-  display: block;
-  width: 22px;
-  height: 1px;
-  border-radius: 1px;
-  background: #fff;
-  margin: 5px;
 }
 .button-up {
   display: none;
@@ -233,6 +248,28 @@ footer p {
   color: var(--light);
   margin-right: 2rem;
 }
+.rank-id {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-right: 2.4rem;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+.ssrank .rank-id {
+  background-color: var(--red);
+}
+.srank .rank-id {
+  background-color: var(--orange);
+}
+.arank .rank-id {
+  background-color: var(--green);
+}
+.brank .rank-id {
+  background-color: var(--secondary-blue);
+}
+.crank .rank-id {
+  background-color: var(--gray);
+}
 @media (max-width: 1000px) {
   .my-nav .my-nav-cell {
     display: none;
@@ -259,5 +296,11 @@ footer p {
   }
   h2 {
     font-size: 1.2rem;
+  }
+  #banner img {
+    margin: 0;
+  }
+  .navigation-bar.scroll {
+    padding-top: 0.5rem;
   }
 }

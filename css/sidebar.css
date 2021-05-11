@@ -55,6 +55,11 @@
     top: 2.4rem;
   }
 }
+@media (max-width: 320px) {
+  .sidebar {
+    top: 3.2rem;
+  }
+}
 
 .sidebar-animate {
   -webkit-transition: -webkit-transform 300ms ease;
